@@ -13,6 +13,11 @@
         this.voti = Voti;
     }
 
+    public void AggiungiVoto(float voto)
+    {
+        voti.Add(voto);
+    }
+
     public override string ToString()
     {
         float sommaTotale = 0;
