@@ -28,6 +28,12 @@ public class Ricorrenza
         return 1 + ContaCifre(n / 10);
     }
 
+    public int TrovaMassimo(int[] arr, int i)
+    {
+        if (i == 0) return arr[0];
+        int maxResto = TrovaMassimo(arr, i - 1);
+        return Math.Max(arr[i], maxResto);
+    }
     
 
 
