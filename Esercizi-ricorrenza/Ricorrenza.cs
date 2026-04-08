@@ -54,5 +54,10 @@ public class Ricorrenza
         if (b == 0) return a;
         return MCD(b, a % b);
     }
+
+    public void Permutazioni(string s)
+    {
+        
+    }
     
 }
