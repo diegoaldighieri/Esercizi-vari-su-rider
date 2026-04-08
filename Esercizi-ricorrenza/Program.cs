@@ -12,7 +12,16 @@ Test("Potenza(5, 0)", ric.Potenza(5, 0));
 Test("ContaCifre(123)", ric.ContaCifre(123));
 Test("TrovaMassimo([1, 5, 3, 9, 2], 4)", ric.TrovaMassimo(new int[] { 1, 5, 3, 9, 2 }, 4));
 
+TestBool("IsPalindromo(\"radar\")", ric.IsPalindromo("radar"));
+TestBool("IsPalindromo(\"hello\")", ric.IsPalindromo("hello"));
+TestBool("IsPalindromo(\"A man a plan a canal Panama\")", ric.IsPalindromo("A man a plan a canal Panama"));
+
 void Test(string name, int risultato)
+{
+    Console.WriteLine($"{name}: {risultato} ");
+}
+
+void TestBool(string name, bool risultato)
 {
     Console.WriteLine($"{name}: {risultato} ");
 }

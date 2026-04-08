@@ -1,4 +1,6 @@
 
+using System.Reflection.Metadata;
+
 public class Ricorrenza
 {
     public void ConteggioRegressivo(int n)
@@ -33,8 +35,18 @@ public class Ricorrenza
         int maxResto = TrovaMassimo(arr, i - 1);
         return Math.Max(arr[i], maxResto);
     }
+
+    public bool IsPalindromo(string s)
+    {
+        s = s.ToLower().Replace(" ", "");
+        return IsPalindromo(s, 0, s.Length - 1);
+    }
+
+    private bool IsPalindromo(string s, int inizio, int fine)
+    {
+        if (inizio >= fine) return true;
+        if (s[inizio] != s[fine]) return false;
+        return IsPalindromo(s, inizio + 1, fine - 1);
+    }
     
-
-
-
 }
