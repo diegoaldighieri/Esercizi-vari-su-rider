@@ -11,6 +11,7 @@ Test("Potenza(2, 10)", ric.Potenza(2, 10));
 Test("Potenza(5, 0)", ric.Potenza(5, 0));
 Test("ContaCifre(123)", ric.ContaCifre(123));
 Test("TrovaMassimo([1, 5, 3, 9, 2], 4)", ric.TrovaMassimo(new int[] { 1, 5, 3, 9, 2 }, 4));
+Test("MCD(12, 8)", ric.MCD(12, 8));
 
 TestBool("IsPalindromo(\"radar\")", ric.IsPalindromo("radar"));
 TestBool("IsPalindromo(\"hello\")", ric.IsPalindromo("hello"));

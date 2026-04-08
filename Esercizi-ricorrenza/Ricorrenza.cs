@@ -48,5 +48,11 @@ public class Ricorrenza
         if (s[inizio] != s[fine]) return false;
         return IsPalindromo(s, inizio + 1, fine - 1);
     }
+
+    public int MCD(int a, int b)
+    {
+        if (b == 0) return a;
+        return MCD(b, a % b);
+    }
     
 }
