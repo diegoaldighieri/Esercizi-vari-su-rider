@@ -3,7 +3,6 @@ public class Ricorrenza
     public int ConteggioRegressivo(int n)
     {
         if (n == 0) return 0;
-        
         return 1 + ConteggioRegressivo(n - 1);
     }
 
@@ -19,6 +18,14 @@ public class Ricorrenza
         if (esponente == 0) return 1;
         return base * Potenza(base, esponente - 1);
     }
+
+    public int ContaCifre(int n)
+    {
+        if (n == 0) return 0;
+        return 1 + ContaCifre(n / 10);
+    }
+
+    
 
 
 
