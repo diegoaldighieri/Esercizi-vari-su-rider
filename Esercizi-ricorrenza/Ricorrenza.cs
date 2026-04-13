@@ -1,4 +1,3 @@
-
 using System.Reflection.Metadata;
 
 public class Ricorrenza
@@ -55,9 +54,19 @@ public class Ricorrenza
         return MCD(b, a % b);
     }
 
-    public void Permutazioni(string s)
+    public void Permutazioni(string s, string corrente = "")
     {
-        
+        if (s.Length == 0)
+        {
+            Console.WriteLine(corrente);
+            return;
+        }
+
+        for (int i = 0; i < s.Length; i++)
+        {
+            string rimanente = s.Remove(i, 1);
+            Permutazioni(rimanente, corrente + s[i]);
+        }
     }
     
 }

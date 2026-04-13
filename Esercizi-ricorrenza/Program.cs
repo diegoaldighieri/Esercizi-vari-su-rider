@@ -17,6 +17,10 @@ TestBool("IsPalindromo(\"radar\")", ric.IsPalindromo("radar"));
 TestBool("IsPalindromo(\"hello\")", ric.IsPalindromo("hello"));
 TestBool("IsPalindromo(\"A man a plan a canal Panama\")", ric.IsPalindromo("A man a plan a canal Panama"));
 
+Console.WriteLine("Conteggio permutazione");
+ric.Permutazioni("Bomboclaat");
+
+
 void Test(string name, int risultato)
 {
     Console.WriteLine($"{name}: {risultato} ");
