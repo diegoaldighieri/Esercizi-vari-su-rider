@@ -19,6 +19,8 @@ TestBool("IsPalindromo(\"A man a plan a canal Panama\")", ric.IsPalindromo("A ma
 Console.WriteLine("Conteggio permutazione");
 ric.Permutazioni("aaa");
 
+Console.WriteLine("Torre di Hanoi con 3 dischi:");
+ric.Hanoi(3, "A", "C", "B");
 
 void Test(string name, int risultato)
 {

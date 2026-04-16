@@ -63,5 +63,13 @@ public class Ricorrenza
             Permutazioni(rimanente, corrente + s[i]);
         }
     }
+
+    public void Hanoi(int n, string daPiolo, string aPiolo, string appoggioPiolo)
+    {
+        if (n == 0) return;
+        Hanoi(n - 1, daPiolo, appoggioPiolo, aPiolo);
+        Console.WriteLine($"Sposta disco {n} da {daPiolo} a {aPiolo}");
+        Hanoi(n - 1, appoggioPiolo, aPiolo, daPiolo);
+    }
     
 }
